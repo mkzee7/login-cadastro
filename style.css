@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ff7b00, #f8b436);
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 360px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgb(168, 81, 0);
+    padding: 24px;
+}
+
+h1 {
+    font-size: 20px;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+form {
+    display: grid;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    color: #333;
+}
+
+input {
+    margin-top: 8px;
+    padding: 10px 12px;
+    border: 1px solid #ccd0d5;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+button {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #ff6600;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #ffaf65;
+}
+
+.divider {
+    text-align: center;
+    color: #777;
+    margin: 12px 0;
+    font-size: 13px;
+}
+
+.senha-container {
+    position: relative;
+}
+
+.senha-container input {
+    width: 100%;
+    padding-right: 40px;
+    box-sizing: border-box; 
+}
+
+.toggle-senha {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    user-select: none;
+}
+.hidden {
+    display: none;
+}
+
+.alterna-form {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 12px;
+    color: #555;
+}
+
+.alterna-form a {
+    color: #ff6600;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.alterna-form a:hover {
+    text-decoration: underline;
+}
+
+.erro {
+    color: #e63946;
+    font-size: 12px;
+    min-height: 14px;
+    display: block;
+}

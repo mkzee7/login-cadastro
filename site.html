@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login e Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <form id="loginForm">
+        <h1>Login</h1>
+        <label>
+            Usuário
+            <input type="text" name="user" placeholder="Digite seu usuário" required>
+        </label>
+        <label>
+            Senha
+            <div class="senha-container">
+                <input type="password" id="senha-login" placeholder="Digite sua senha">
+                <span class="toggle-senha" onclick="alternarSenha('senha-login', this)">○</span>
+            </div>
+        </label>
+        <button type="submit">Entrar</button>
+        <p class="alterna-form">
+            Não tem conta? <a href="#" onclick="mostrarCadastro()">Cadastre-se</a>
+        </p>
+    </form>
+
+    <form id="registerForm" class="hidden">
+        <h1>Cadastro</h1>
+        <label>
+            Nome
+            <input type="text" name="name" placeholder="Digite seu nome" required>
+            <span class="erro" id="erro-nome"></span>
+        </label>
+        <label>
+            E-mail
+            <input type="email" name="email" id="email-cadastro" placeholder="Digite seu e-mail" required>
+            <span class="erro" id="erro-email"></span>
+        </label>
+        <label>
+            Senha
+            <div class="senha-container">
+                <input type="password" id="senha-cadastro" placeholder="Crie uma senha">
+                <span class="toggle-senha" onclick="alternarSenha('senha-cadastro', this)">○</span>
+            </div>
+            <span class="erro" id="erro-senha-cadastro"></span>
+        </label>
+        <button type="submit">Cadastrar</button>
+        <p class="alterna-form">
+            Já tem conta? <a href="#" onclick="mostrarLogin()">Fazer Login</a>
+        </p>
+    </form>
+</div>
+    <script src="Sistema.js"></script>
+</body>
+</html>
